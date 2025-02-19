@@ -25,7 +25,7 @@ my_dataframe = session.table("smoothies.public.fruit_options").select(col('FRUIT
 #st.stop()
 
 #convert the snoflake df to pandas df so we can use loc function
-pd_df=mydatframe.to_pandas()
+pd_df=my_dataframe.to_pandas()
 st.datframe(pd_df)
 st.stop()
 
